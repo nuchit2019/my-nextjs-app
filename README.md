@@ -75,7 +75,7 @@ lib/AppInsightConfig.js
 
 ### Usage
 The `handleButtonClick` function in the `Home` component demonstrates:
-Flow Code Logging Example...
+**Flow Code Logging Example...***
 ```
 //=====================================================//
 // 1. START_PROCESS
