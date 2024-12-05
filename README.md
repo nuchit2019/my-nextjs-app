@@ -59,6 +59,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Logging Details
 ### Logging Methods
+
+lib/AppInsightConfig.js
 - **`logStartProcess(process, message, context)`**
   Logs the start of a process with `SeverityLevel.Information`.
 
@@ -73,10 +75,30 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Usage
 The `handleButtonClick` function in the `Home` component demonstrates:
-1. Start Process Logging
-2. Validation Warning
-3. Business Logic Success
-4. Exception Handling
+Flow Code Logging Example...
+```
+//=====================================================//
+// 1. START_PROCESS
+//=====================================================//
+
+// ..............................
+//*** Validation Logic
+// ..............................
+//=====================================================//
+// 2. WARNING_PROCESS
+//=====================================================//
+
+// ..............................
+//*** Business logic
+// ..............................
+//=====================================================//
+// 3. SUCCESS_PROCESS
+//=====================================================//
+
+//=====================================================//
+// 4. EXCEPTION_PROCESS
+//=====================================================//
+```
 
 ### Styling
 The button is styled to indicate when processing is ongoing by disabling the click and changing the cursor.
