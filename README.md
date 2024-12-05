@@ -149,8 +149,6 @@ const handleButtonClick = async () => {
   };
 ...
   ```
-### Styling
-The button is styled to indicate when processing is ongoing by disabling the click and changing the cursor.
 
 ---
 
