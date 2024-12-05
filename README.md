@@ -51,8 +51,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ├── lib/
 │   ├── AppInsightConfig.js       # Application Insights configuration
 │   ├── AppInsightLogging.js      # Logging utility functions
-├── pages/
-│   ├── index.js                  # Main page with logging workflow
+├── app/
+│   ├── page.js                   # Main page with logging workflow
 ├── README.md                     # Project documentation
 ├── package.json                  # Project dependencies and scripts
 ```
@@ -99,7 +99,53 @@ Flow Code Logging Example...
 // 4. EXCEPTION_PROCESS
 //=====================================================//
 ```
+app/page.js
+```
+const handleButtonClick = async () => {
+    try {
+      setIsProcessing(true); // Disable the button while processing
 
+      //=====================================================//
+      // 1. START_PROCESS
+      //=====================================================//
+      console.log('Home', 'Starting...', requestBody);
+      logStartProcess('Home', 'Starting...', requestBody);
+
+      
+      // ..............................
+      //*** Validation Logic
+      // ..............................
+      //=====================================================//
+      // 2. WARNING_PROCESS
+      //=====================================================//
+      if (requestBody.cdd_type === 'I') {// Simulate validation logic
+        console.log('Home', 'Warning: Sample validation issue.', requestBody);
+        logWarningProcess('Home', 'Warning: Sample validation issue.', requestBody);
+      }
+
+      // ..............................
+      //*** Business logic
+      // ..............................
+      //=====================================================//
+      // 3. SUCCESS_PROCESS
+      //=====================================================//
+      // Simulate business logic
+      await new Promise((resolve) => setTimeout(resolve, 1000)); // Mock async operation
+      console.log('Home', 'Succeeded...');
+      logSuccessProcess('Home', 'Succeeded...');
+
+    } catch (error) {
+      //=====================================================//       
+      // 4. EXCEPTION_PROCESS
+      //=====================================================//
+      console.log('Home', error.message);
+      logExceptionProcess('Home', error.message);
+      
+    } finally {
+      setIsProcessing(false); // Re-enable the button
+    }
+  };
+  ```
 ### Styling
 The button is styled to indicate when processing is ongoing by disabling the click and changing the cursor.
 
