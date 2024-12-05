@@ -24,6 +24,11 @@ cd my-nextjs-app
 ```
 
 ### Step 2: Install Dependencies
+
+- @azure/monitor-opentelemetry-exporter
+- @microsoft/applicationinsights-react-js
+- @microsoft/applicationinsights-web
+
 Run the following command to install the required packages:
 ```bash
 npm install @azure/monitor-opentelemetry-exporter @microsoft/applicationinsights-react-js @microsoft/applicationinsights-web
