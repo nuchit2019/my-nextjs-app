@@ -20,7 +20,7 @@ Ensure you have the following installed:
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/nuchit2019/my-nextjs-app.git
-cd your-project
+cd my-nextjs-app
 ```
 
 ### Step 2: Install Dependencies
