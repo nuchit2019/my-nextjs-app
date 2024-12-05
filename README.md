@@ -101,6 +101,7 @@ Flow Code Logging Example...
 ```
 app/page.js
 ```
+...
 const handleButtonClick = async () => {
     try {
       setIsProcessing(true); // Disable the button while processing
@@ -145,6 +146,7 @@ const handleButtonClick = async () => {
       setIsProcessing(false); // Re-enable the button
     }
   };
+...
   ```
 ### Styling
 The button is styled to indicate when processing is ongoing by disabling the click and changing the cursor.
