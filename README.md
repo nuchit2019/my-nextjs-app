@@ -114,5 +114,4 @@ Feel free to fork the repository and create a pull request for any improvements 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
-
-This `README.md` file should provide clear guidance to set up and use your Next.js project with Application Insights logging.
+ 
