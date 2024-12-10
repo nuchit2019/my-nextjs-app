@@ -182,6 +182,9 @@ const handleButtonClick = async () => {
   ```
 
 ---
+## Viewing Data in Azure Application Insights
+![image](https://github.com/user-attachments/assets/8545a84a-90d0-4595-9aea-891f6303afe0)
+
 
 ## Contributing
 
